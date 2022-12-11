@@ -295,7 +295,7 @@ service rsyslog restart
 ```
 ### Hasil Nomor 2
 <picture>
-     <img alt="Screenshoot hasil No 2." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokumentasi/no_4.jpg">
+     <img alt="Screenshoot hasil No 2." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokumentasi/no 4.jpg">
 </picture>
     
 ## Soal Nomor 3
