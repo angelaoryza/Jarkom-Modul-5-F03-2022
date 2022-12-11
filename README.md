@@ -12,6 +12,9 @@ Jarkom-Modul-5-F03-2022
 ``` IP Kelompok F03 = 10.30``` 
 
 **Topologi**
+<picture>
+     <img alt="Screenshoot hasil topologi" src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokumentasi/topologi.png">
+</picture>
 
 **Konfigurasi Node**
 
