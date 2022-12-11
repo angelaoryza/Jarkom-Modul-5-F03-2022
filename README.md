@@ -278,7 +278,7 @@ iptables -t nat -A POSTROUTING -o eth0 -j SNAT -s 10.30.0.0/21 --to-source 192.1
 
 ### Hasil Nomor 1
 <picture>
-     <img alt="Screenshoot hasil No 1." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokuemntasi/no_1.jpg">
+     <img alt="Screenshoot hasil No 1." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokumentasi/no_1.jpg">
 </picture>
 
 ## Soal Nomor 2
@@ -295,7 +295,7 @@ service rsyslog restart
 ```
 ### Hasil Nomor 2
 <picture>
-     <img alt="Screenshoot hasil No 2." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/src/no_4.jpg">
+     <img alt="Screenshoot hasil No 2." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokumentasi/no_4.jpg">
 </picture>
     
 ## Soal Nomor 3
@@ -310,6 +310,15 @@ iptables -A LOGGING -j LOG --log-prefix "IPTables-Dropped: "
 iptables -A LOGGING -j DROP
 ```
 ### Hasil Nomor 3
+<picture>
+     <img alt="Screenshoot hasil No 3." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokumentasi/no_3-1.jpg">
+</picture>
+<picture>
+     <img alt="Screenshoot hasil No 3." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokumentasi/no_3-2.jpg">
+</picture>
+<picture>
+     <img alt="Screenshoot hasil No 3." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokumentasi/no_3-3.jpg">
+</picture>
 
 ## Soal Nomor 4
 Akses menuju Web Server hanya diperbolehkan disaat jam kerja yaitu Senin sampai Jumat pada pukul 07.00 - 16.00.
@@ -321,6 +330,9 @@ iptables -A INPUT -m time --timestart 07:00 --timestop 16:00 --weekdays Mon,Tue,
 ```
 
 ### Hasil Nomor 4
+<picture>
+     <img alt="Screenshoot hasil No 4." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokumentasi/no_2.jpg">
+</picture>
 
 ## Soal Nomor 5
 Karena kita memiliki 2 Web Server, Loid ingin Ostania diatur sehingga setiap request dari client yang mengakses Garden dengan port 80 akan didistribusikan secara bergantian pada SSS dan Garden secara berurutan dan request dari client yang mengakses SSS dengan port 443 akan didistribusikan secara bergantian pada Garden dan SSS secara berurutan.
@@ -334,6 +346,9 @@ iptables -A PREROUTING -t nat -p tcp -d 10.30.0.18 --dport 443 -m statistic --mo
 iptables -A PREROUTING -t nat -p tcp -d 10.30.0.18 --dport 443 -j DNAT --to-destination 10.30.0.19:443
 ```
 ### Hasil Nomor 5
+<picture>
+     <img alt="Screenshoot hasil No 5." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokumentasi/no_5.jpg">
+</picture>
 
 ## Soal Nomor 6
 Karena Loid ingin tau paket apa saja yang di-drop, maka di setiap node server dan router ditambahkan logging paket yang di-drop dengan standard syslog level.
@@ -346,3 +361,6 @@ iptables -A LOGGING -j LOG --log-prefix "IPTables-Rejected: "
 iptables -A LOGGING -j REJECT
 ```
 ### Hasil Nomor 6
+<picture>
+     <img alt="Screenshoot hasil No 6." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokumentasi/no_6.jpg">
+</picture>
