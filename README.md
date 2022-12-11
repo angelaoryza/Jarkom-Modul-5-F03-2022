@@ -275,7 +275,11 @@ Agar topologi yang kalian buat dapat mengakses keluar, kalian diminta untuk meng
 ```
 iptables -t nat -A POSTROUTING -o eth0 -j SNAT -s 10.30.0.0/21 --to-source 192.168.122.2
 ```
+
 ### Hasil Nomor 1
+    <picture>
+     <img alt="Screenshoot hasil No 1." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/dokuemntasi/no_1.jpg">
+    </picture>
 
 ## Soal Nomor 2
 Kalian diminta untuk melakukan drop semua TCP dan UDP dari luar Topologi kalian pada server yang merupakan DHCP Server demi menjaga keamanan.
@@ -290,7 +294,10 @@ iptables -A FORWARD -i eth0 -p udp -d 10.30.0.11 -j LOGGING
 service rsyslog restart
 ```
 ### Hasil Nomor 2
-
+    <picture>
+     <img alt="Screenshoot hasil No 2." src="https://github.com/angelaoryza/Jarkom-Modul-5-F03-2022/blob/main/src/no_4.jpg">
+    </picture>
+    
 ## Soal Nomor 3
 Loid meminta kalian untuk membatasi DHCP dan DNS Server hanya boleh menerima maksimal 2 koneksi ICMP secara bersamaan menggunakan iptables, selebihnya didrop.
 
